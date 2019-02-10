@@ -29,5 +29,12 @@ To setup development environment (Optional - develop)
 4. npm install # to install all dependencies
 
 
+Debug
+-----
+1. source venv/bin/activate
+2. python manage.py makemigrations movie
+3. python manage.py migrate
+4. python manage.py runserver
+
 
 -- Completed --

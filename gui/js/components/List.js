@@ -35,11 +35,20 @@ class ListItem extends React.Component {
                         <tbody>
                         <tr>
                             <td id="img-div" rowSpan="4" className="pr-2">
-                                <img src={"/static/img/"+String(obj.id)+".jpeg"} alt="" width="100px" height="120px" />
+                                { obj.image_url ?
+                                    <img src={obj.image_url} alt="" width="100px" height="120px" />
+                                :
+                                    <img src={"/static/img/"+String(obj.id)+".jpeg"} alt="" width="100px" height="120px" />
+                                }
+                                {/* <img src={"/static/img/"+String(obj.id)+".jpeg"} alt="" width="100px" height="120px" /> */}
                             </td>
                             <td>
                                 <strong><label className="text-primary">{obj.name}  </label></strong>
-                                <button className="btn-link" value={obj.id} onClick={() => this.editItem(obj.id)}><i className="fa fa-edit"></i></button>
+                                { obj.image_url ?
+                                    <button className="btn-link" value={obj.id} ><i className="fa fa-info-circle"></i></button>
+                                :
+                                    <button className="btn-link" value={obj.id} onClick={() => this.editItem(obj.id)}><i className="fa fa-edit"></i></button>
+                                }
                             </td>
                             <td></td>
                             <td></td>
