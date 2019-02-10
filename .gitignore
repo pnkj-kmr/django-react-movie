@@ -1,0 +1,6 @@
+*.py[co]
+
+**/db.sqlite3
+**/venv
+**/node_modules
+**/migrations

@@ -1,0 +1,35 @@
+{
+  "name": "movie-panel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "nodemon -w webpack.config.js -x webpack-dev-server --hot"
+  },
+  "author": "Pankaj",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^2.0.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-google-recaptcha": "^1.0.5",
+    "react-hot-loader": "^4.6.3",
+    "react-recaptcha": "^2.3.10",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-select": "^2.1.2",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "webpack-dev-server": "^3.1.11"
+  }
+}
